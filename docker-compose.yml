@@ -6,9 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: loginform
-    image: login:01
+    image: login:${BUILD_ID}
     ports:
-      - "80:80"
+      - "81:80"
     volumes:
       - .:/usr/share/nginx/html:ro
     networks:
