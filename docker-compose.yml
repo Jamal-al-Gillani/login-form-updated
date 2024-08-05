@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: loginform
-    image: login:${BUILD_ID}
+    image: login:${TAG}
     ports:
       - "80:80"
     volumes:
